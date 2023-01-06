@@ -20,8 +20,39 @@
             <p class="event-date">Sunday 28th, Starts at 2pm</p>
         </div>
         <div id="subscription-form">
+            <p>Fill in the form to receive event details</p>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" placeholder="Type your name">
+                </div>
 
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" placeholder="Enter your best email">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="text" name="phone" placeholder="enter your phone number">
+                </div>
+
+                <div class="form-group">
+                    <label for="interest">Main interest</label>
+                    <select name="interest" id="" title="1">
+                        <option value="" disable selected>Select</option>
+                        <option value="apartment">Apartments</option>
+                        <option value="house">House</option>
+                        <option value="garden">Garden</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <input type="submit" class="btn" value="I want to apply">
+            </form>
         </div>
+
+
     </header>
+
 </body>
 </html>
