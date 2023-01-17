@@ -124,7 +124,7 @@
     max-width: 20%;
     color: var(--text-tertiary);
 }
-                  
+
 .benefit .benefit-img {
     width: 250px;
     height: 250px;
@@ -147,7 +147,7 @@
 }
 
 
-/*Event Location */
+/* Event Location */
 #location {
     height: 400px;
     background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(/img/hrz-1.jpg);
@@ -287,4 +287,118 @@
 
 #footer span {
     font-weight: bold;
+}
+
+
+
+/* Mobile */
+@media (max-width: 450px) {
+
+    .btn {
+        opacity: 1;
+    }
+
+    /* Event Form */
+    #event-description {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #disclaimer {
+        margin-bottom: 0.5em;
+        margin-top: 1em;
+    }
+
+    #subscription-form {
+        max-width: 70%;
+        margin-bottom: 2em;
+    }
+
+    /* Benefit Section */
+    .benefits {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        padding: 2em;
+    }
+
+    .benefit {
+        max-width: 100%;
+        margin-bottom: 2em;
+    }
+
+    /* Event Location */
+
+    #location {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 2em 0;
+    }
+
+    #address {
+        order: 2;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    #address i {
+        margin: 0.3em 0;
+    }
+
+    #about-location {
+        order: 1;
+        max-width: 100%;
+    }
+
+    #about-location h3 {
+        margin-bottom: 0;
+    }
+
+    #about-location p {
+        display: none;
+    }
+
+    /* Event details container */
+
+    .detail {
+        flex-direction: column;
+        margin-bottom: 0.5em;
+        gap: 0;
+    }
+
+    .detail img {
+        width: 100%;
+        margin: 2em 0;
+    }
+
+    #detail-1 img {
+        display: none;
+    }
+    #detail-1 h3 {
+    font-size: 1.9em;
+    }
+
+    .detail-description {
+        padding: 0;
+    }
+
+    #detail-3 img {
+        order: 2;
+    }
+
+    #detail-3 .detail-description {
+        order: 1;
+    }
+
+    /* Call to Action Section */
+
+    #cta {
+        text-align: center;
+    }
+
+    #cta .btn {
+        width: 80%;
+    }
+
 }
